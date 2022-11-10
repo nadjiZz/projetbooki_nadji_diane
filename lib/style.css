@@ -1,0 +1,319 @@
+html{
+    margin: 0;
+    
+}
+*{
+    box-sizing: border-box;
+    margin: auto;
+   
+}
+
+body{
+    display: block;
+    max-width: 100%;
+    min-width: 40%;
+    font-family: "Raleway", "Sans serif";
+    padding:2em 2em 2em 2em;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+#entete{
+    background-color: white;
+    display: block;
+    max-width: 90%;
+    width: auto;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+.Imgbooki{
+    grid-area: logo;
+    padding: 0 2rem;
+    height: 2.813rem;
+}
+#recherche{
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 40%;
+}
+#filtre{
+    display: flex;
+    border-radius: 5%;
+    margin: 2%;
+    padding: 2%;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    position: auto;
+}
+#container{
+    margin: 2% auto;
+    padding: 2% auto;
+    max-width: 90%;
+    width: auto;
+    justify-content: space-between;
+    border: 2px solid black;
+    display: flex;
+}
+.fil
+
+.fill{
+    border: 1px solid;
+    border-radius: 10%;
+}
+.cadre{
+    background-color: black;
+}
+#tout{
+    background-attachment: fixed;
+   
+    
+}
+#conteneur{
+
+    display: flex;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding: 2%;
+    background-color: white;
+    border-radius: 3%;
+    box-sizing: border-box;
+}
+#ligne1{
+    box-sizing: border-box;
+    display: flex;
+    padding: 0 1rem 0 1remS;
+}
+#ligne2{
+    display: flex;
+    box-sizing: border-box;
+}
+#photos{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    width: auto;
+    margin: auto;
+    box-sizing: border-box;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+
+}
+
+.hebergement_maseille{
+    border-radius: 5%;
+    padding: 2%;
+    box-sizing: border-box;
+    padding-right: 10%;
+    background-color: whitesmoke;
+}
+
+.item{
+   
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    background-color: white;
+    box-sizing: border-box ;
+    border-radius: 1rem 1rem 0 0;
+}
+
+img{
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    height: 8em;
+    width: 20em;
+    justify-content: baseline;
+       
+}
+
+.itmtext{
+    padding: 2% 0 2% 0;
+    float: left;
+}
+#populaire{
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 3%;
+    box-sizing: border-box;
+    display: block;
+    height:auto; 
+    width: auto;
+    max-width: 100%;
+    float: left;
+    margin-left: 5%;
+    padding: 2%;
+}
+#bloc{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    float:left;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+    
+  
+}
+p{
+    margin-left:10px ;
+}
+
+.items{
+    display: flex;
+    width: auto;
+    height: auto;
+    flex: left;
+    background-color: white;
+    border-radius: 10%;
+    margin: 2%;
+    box-sizing: border-box;
+}
+#image{
+    border-bottom-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+ul{
+    list-style: none;
+    margin-left: 50px;
+}
+ul li{
+    display: inline-block;
+
+}
+ul li a{
+    text-decoration: none;
+}
+ul li a h1{
+    font-family: cursive;
+}
+
+.active{
+    border-top: 2px solid;
+    margin-left: 900px;
+    margin-right: 20px;
+}
+
+#activité_marseille{
+    border-radius: 5%;
+   width: auto;
+   display: block;
+   box-sizing: border-box;
+   justify-content: space-between;
+   background-color: white;
+}
+h5{
+    margin-left: 10%;
+
+}
+.value{
+    font-weight: bold;
+}
+#comp{
+    display: block;
+    
+    float: left;
+    width: 100%;
+    
+  
+}
+  #dilem{
+    margin-left: auto;
+    padding: auto; 
+    justify-content: space-between;
+    display: flex;
+    box-sizing: border-box;
+
+  } 
+#toper{
+display: justify; 
+padding: 10px;
+}
+
+.iten{
+    width: auto;
+    height: auto;
+    flex: left;
+    position: bottom;
+    margin: 5%;
+    padding: auto;
+    background-color: white;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.itenn{
+    width: auto;
+    height: auto;
+    flex: left;
+    margin: 5%;
+    padding: auto;
+    background-color: white;
+    
+}
+
+#unique{
+
+    display: flex;
+    flex: left;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    
+}
+#double{
+  
+    display: flex;
+    flex: left;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+
+#imge{
+   height: 20em;
+   width: 20em;
+}
+#imgee{
+    height: 8em;
+    width: 20em;
+
+}
+
+
+#foot{
+    background-color: whitesmoke;
+    display: flex;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+ 
+}
+
+.propos{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+   
+}
+.heb{
+    display: block;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+
+}
+.ass{
+    display: block;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
