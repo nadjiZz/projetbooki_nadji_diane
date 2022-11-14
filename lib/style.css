@@ -1,16 +1,25 @@
 html{
     margin: 0;
-    padding: 0;
+    
+}
+
+body{
     display: block;
-    justify-content: center;   
+    max-width: 100%;
+    min-width: 40%;
+    font-family: "Raleway", "Sans serif";
+    padding:2em 2em 2em 2em;
+    box-sizing: border-box;
+    justify-content: space-between;
 }
 #entete{
     background-color: white;
+    display: block;
+    max-width: 90%;
     width: auto;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
 .Imgbooki{
     grid-area: logo;
@@ -20,42 +29,40 @@ html{
 #recherche{
     border: 2px solid black;
     border-radius: 15px;
-    width: 25%;
-    height: 2rem;
-    background-color: blue;
-}
-.search{
-    height: 2rem;
+    width: 40%;
 }
 #filtre{
     display: flex;
+    border-radius: 5%;
+    margin: 2%;
+    padding: 2%;
+    justify-content: space-between;
+    width: 100%;
     height: auto;
+    position: auto;
 }
-.liste{
-    display: flex;
-    margin-left: 10rem;
-}
-.contenair{
-    max-width: 100vh;
+#container{
+    margin: 2% auto;
+    padding: 2% auto;
+    max-width: 90%;
     width: auto;
-    justify-content: center;
+    justify-content: space-between;
+    border: 2px solid black;
     display: flex;
-    flex-direction: column;
 }
-#icone{
-    border: 1px solid black;
-    border-radius: 3rem; 
-    margin: 0 2rem 0 2rem;  
+.fil
+
+.fill{
+    border: 1px solid;
+    border-radius: 10%;
 }
-#corps{
-    width: auto;
+.cadre{
+    background-color: black;
+}
+#tout{
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding: 0 2rem;
-    box-sizing: border-box;
-    justify-content: center;    
+   
+    
 }
 #conteneur{
 
@@ -65,84 +72,73 @@ html{
     height: auto;
     padding: 2%;
     background-color: white;
-    box-sizing: border-box;
-    justify-content: center;
-}
-.ligne1{
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    margin: 1%;
-    justify-content: space-between;
-}
-.ligne2{
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    margin: 1%;
-    justify-content: space-between;
-}
-#hebergement_marseille{
-    max-width: 75%;
-    width: ato;
-    float: right;
-    border-radius: 3%;
-    padding: 1rem;
-    box-sizing: border-box;
-    background-color: whitesmoke;
-    justify-content: center;
-}
-#populaire{
-    background-color: whitesmoke;
     border-radius: 3%;
     box-sizing: border-box;
-    height:auto; 
-    width: auto;
-    max-width: 30%;
-    float: left;
-    margin-left: 2rem;
-    padding: 1rem;
-    justify-content: center;
 }
-#activité_marseille{
-    border-radius: 5%;
-    max-width: 100%;
-    width: auto;
-    display: block;
-    justify-content: center;
+#ligne1{
     box-sizing: border-box;
-    background-color: white;
-    }
-.item{
-    width: auto;
-    height: auto;
     display: flex;
-    flex: left;
+    padding: 0 1rem 0 1remS;
+}
+#ligne2{
+    display: flex;
+    box-sizing: border-box;
+}
+#photos{
+    display: flex;
     flex-direction: column;
-    margin: 1rem;
+    max-width: 90%;
+    width: auto;
+    margin: auto;
+    box-sizing: border-box;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+
+}
+
+.hebergement_maseille{
+    border-radius: 5%;
+    padding: 2%;
+    box-sizing: border-box;
+    padding-right: 10%;
+    background-color: whitesmoke;
+}
+
+.item{
+   
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
     background-color: white;
     box-sizing: border-box ;
     border-radius: 1rem 1rem 0 0;
-    justify-content: space-between;
 }
+
 img{
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
     height: 8em;
-    width: 16em;
-    justify-content: space-around; 
+    width: 20em;
+    justify-content: baseline;
+       
 }
-#imag{
-    max-width: 100%;
-    min-width: 5rem;
-    height: 7rem;
-    justify-content: baseline; 
-}
+
 .itmtext{
-    padding: 2% 0 2% 2%;
+    padding: 2% 0 2% 0;
     float: left;
+}
+#populaire{
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 3%;
+    box-sizing: border-box;
+    display: block;
+    height:auto; 
+    width: auto;
+    max-width: 100%;
+    float: left;
+    margin-left: 5%;
+    padding: 2%;
 }
 #bloc{
     background-color: whitesmoke;
@@ -151,10 +147,14 @@ img{
     float:left;
     max-width: 100%;
     box-sizing: border-box;
+    
+    
+  
 }
 p{
     margin-left:10px ;
 }
+
 .items{
     display: flex;
     width: auto;
@@ -164,17 +164,10 @@ p{
     border-radius: 10%;
     margin: 2%;
     box-sizing: border-box;
-    justify-content: space-between;
 }
 #image{
-    border-bottom-left-radius: 10%;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 0%;
-    max-width: 100%;
-    width: 10rem;
-    height: 12rem;
-    justify-content: baseline;
-
+    border-bottom-left-radius: 3%;
+    border-top-right-radius: 3%;
 }
 ul{
     list-style: none;
@@ -182,6 +175,7 @@ ul{
 }
 ul li{
     display: inline-block;
+
 }
 ul li a{
     text-decoration: none;
@@ -189,62 +183,89 @@ ul li a{
 ul li a h1{
     font-family: cursive;
 }
+
 .active{
     border-top: 2px solid;
-    margin-left: 50rem;
-    margin-right: 3rem;
+    margin-left: 900px;
+    margin-right: 20px;
+}
+
+#activité_marseille{
+    border-radius: 5%;
+   width: auto;
+   display: block;
+   box-sizing: border-box;
+   justify-content: space-between;
+   background-color: white;
 }
 h5{
     margin-left: 10%;
+
 }
 .value{
     font-weight: bold;
 }
-.etoile{
-color: blue;
-}
-.opacité{
-    opacity: 0.3;
+#comp{
+    display: block;
+    
+    float: left;
+    width: 100%;
+    
+  
 }
   #dilem{
     margin-left: auto;
     padding: auto; 
     justify-content: space-between;
     display: flex;
-    flex-direction: row;
     box-sizing: border-box;
-    justify-content: space-between;
+
   } 
+#toper{
+display: justify; 
+padding: 10px;
+}
+
 .iten{
     width: auto;
     height: auto;
     flex: left;
-    margin: 1%;
+    position: bottom;
+    margin: 5%;
+    padding: auto;
     background-color: white;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
 }
 .itenn{
     width: auto;
     height: auto;
     flex: left;
-    margin: 1%;
+    margin: 5%;
+    padding: auto;
     background-color: white;
-    justify-content: center;
+    
 }
+
 #unique{
+
     display: flex;
     flex: left;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
+    
 }
 #double{
+  
     display: flex;
     flex: left;
     flex-direction: column;
     box-sizing: border-box;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
-    padding: 0 1rem 0 1rem;   
 }
+
+
 #imge{
    height: 20em;
    width: 20em;
@@ -252,17 +273,19 @@ color: blue;
 #imgee{
     height: 8em;
     width: 20em;
+
 }
+
+
 #foot{
-    width: 100%;
-    max-width: 100rem;
-    min-width: 40rem;
     background-color: whitesmoke;
     display: flex;
     margin: auto;
     padding: 0 2rem;
     box-sizing: border-box;
+ 
 }
+
 .propos{
     display: block;
     max-width: 100%;
@@ -270,21 +293,22 @@ color: blue;
     margin: auto;
     padding: 0 2rem;
     box-sizing: border-box;
+   
 }
 .heb{
     display: block;
-    max-width: 100%;
-    width: 100%;
-    margin: auto;
-    padding: 0 2rem;
-    box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+
 }
 .ass{
     display: block;
-    max-width: 100%;
-    width: 100%;
-    margin: auto;
-    padding: 0 2rem;
-    box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
-@media : 
