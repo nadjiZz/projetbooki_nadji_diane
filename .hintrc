@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/parsing": "off",
+    "button-type": "off"
+  }
+}
