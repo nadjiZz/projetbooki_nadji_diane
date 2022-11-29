@@ -24,8 +24,8 @@ nav a:hover {
 }
 .Imgbooki{
     margin-right: auto;
-    height: 2rem;
-    width: 5rem;
+    height: 1%;
+    width: 30%;
     margin: 0 auto 0 2rem;
 }
 .orientation {
@@ -61,7 +61,7 @@ nav a:hover {
 }
 .filtre {
     display: flex;
-    align-items: center;
+    align-items: justify;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
@@ -91,7 +91,7 @@ nav a:hover {
     align-items: center;
 }
 .listfiltre p {
-    padding: 0 1rem 0 0.5rem;
+    padding: 0 0.5rem 0 0.5rem;
 }
 .listfiltre:hover {
     background-color: #f3f8ff;
@@ -99,36 +99,35 @@ nav a:hover {
 }
 /* le corp de la page */
 #corps {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: block;
+    padding-bottom: 2%;
+    justify-content: center;
 
     }
 #contenu {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 #hebergement_marseille {
+    padding: 0;
     position: relative;
     border-radius: 5%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     background-color: rgb(226, 218, 218);
-    height: 55rem;
+    height: auto;
+    width: 60%;
+   
 }
-.ligne1 {
+.ligne {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     justify-content: space-around;
     }
-.ligne2 {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: space-around;
-}
 .item {
     display: flex;
     flex-direction: column;
@@ -136,7 +135,7 @@ nav a:hover {
     border-radius: 10%;
     justify-content: space-around;
     padding: 1rem;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0em 0em 1em 0em;
 }
 .itmtext {
     padding: 0;
@@ -156,8 +155,10 @@ nav a:hover {
     justify-content: space-between;   
 }
 img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    min-width: auto;
+    max-height: 100%;
+    min-height: 10rem;
     justify-content: space-between;
     object-fit: cover;    
 }
@@ -196,19 +197,22 @@ img{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    float: right;
+    
     margin-left: 1%;
     padding: 1%;
-    height: 55rem;
     justify-content: center;
+    width: 30%;
 }
 h3 {
     justify-content: center;
+    margin-left: 2rem;
+}
+h4 p {
+    margin-left: 4 rem;
 }
 #block {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: block;
+    width: 90%;
 }
 .items {
     display: flex;
@@ -226,6 +230,8 @@ h3 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 3rem;
 
 }
 #dilem {
@@ -250,15 +256,16 @@ h3 {
 .itenn {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* pied de la page */
 footer {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(228, 234, 236);
     justify-content: center;
+    align-items: center;
 }
 .propos {
     justify-content: center;
