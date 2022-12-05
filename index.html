@@ -16,15 +16,13 @@
 </head>
 <!-- corps du projet -->
 <body>
-  <section id="entete">
-    <header>
+  <header id="entete">
       <!-- la nav bar -->
       <nav class="navigation">
-            <img class="Imgbooki" src="siteweb_files/Booki.png" alt="logo_Booki" width="20px" height="10px"/>
+            <img class="Imgbooki" src="siteweb_files/Booki.png" alt="logo_Booki">
             <a class=active href="active">Hebergements</a>
             <a href="inactive">Activités</a> 
       </nav>
-      <figure>
         <div class="orientation">
           <h2>Trouvez votre hebergement pour des vaccances de rêve</h2>
           <p>En pleine centre ville ou en pleine nature</p>
@@ -35,7 +33,7 @@
           <button>Recherche</button>
         </div>
         <div class="filtre">
-            <h1>Filtres<h1>
+            <p>Filtres<p>
             <div class="filtrelist">
               <div class="listfiltre"><i class="fa-solid fa-money-bill-wave"></i><p>Economique</p></div>
               <div class="listfiltre"><i class="fa-solid fa-child-reaching"></i><p>Familial</p></div>
@@ -44,29 +42,29 @@
             </div>
         </div>
       <p>Plus de 500 logements sont disponibles dans cette ville</p>
-    </header>
-  </section>
+  </header>
   <section id="corps">
-    <div id="contenu">
-      <div id="hebergement_marseille">
+    <div class="contenu">
+      <div class="hebergement_marseille">
         <h3>Hebergement à Marseille</h3>
         <div class=ligne>
-          <div class="item"><img src="siteweb_files/cannebiere.jpg" alt="Auberge la canebiere" id="imag">
+          <div class="item"><img src="siteweb_files/cannebiere.jpg" alt="Auberge la canebiere" class="imag">
             <div class="itmtext">
               <h4>Auberge la canebiere</h4>
               <p>nuit à partir de <a class="value">25&euro;</a></p>
               <P class="etoile">&#9733;&#9733;&#9733;&#9733;<a class="opacité">&#10032;</a></P>
-              <stars />
             </div>
           </div>
-          <div class="item"><img src="siteweb_files/port.jpg" alt="Hôtel du Port" id="imag">
+          <div class="item">
+            <img src="siteweb_files/port.jpg" alt="Hôtel du Port" class="imag">
             <div class="itmtext">
               <h4>Hôtel du Port</h4>
               <p>nuit à partir de <a class="value">52&euro;</a></p>
               <P class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</P>
             </div>
           </div>
-          <div class="item"><img src="siteweb_files/mouette.jpg" alt="Hôtel les Mouettes" id="imag">
+          <div class="item">
+            <img src="siteweb_files/mouette.jpg" alt="Hôtel les Mouettes" class="imag">
             <div class="itmtext">
               <h4>Hôtel les Mouettes</h4>
               <p>nuit à partir de <a class="value">76&euro;</a></p>
@@ -75,21 +73,24 @@
           </div>
         </div>
         <div class="ligne">
-          <div class="item"><img src="siteweb_files/mer.jpg" alt="Hôtel de la Mer" id="imag">
+          <div class="item">
+            <img src="siteweb_files/mer.jpg" alt="Hôtel de la Mer" class="imag">
             <div class="itmtext">
               <h4>Hôtel de la Mer</h4>
-              <p>nuit à partir de <a class="value">46&euro;<a></a></p>
+              <p>nuit à partir de <a class="value">46&euro;</a></p>
               <P class="etoile">&#9733;&#9733;&#9733;<a class="opacité">&#10032;&#10032;</a></P>
             </div>
           </div>
-          <div class="item"><img src="siteweb_files/panier.jpg" alt="Auberge le Panier" id="imag">
+          <div class="item">
+            <img src="siteweb_files/panier.jpg" alt="Auberge le Panier" class="imag">
             <div class="itmtext">
               <h4>Auberge le Panier</h4>
-              <p>nuit à partir de <a class="value">23&euro;<a></a></p>
+              <p>nuit à partir de <a class="value">23&euro;</a></p>
               <P class="etoile">&#9733;&#9733;&#9733;&#9733;<a class="opacité">&#10032;</a></P>
             </div>
           </div>
-          <div class="item"><img src="siteweb_files/amina.jpg" alt="Hôtel chez Amina" id="imag">
+          <div class="item">
+            <img src="siteweb_files/amina.jpg" alt="Hôtel chez Amina" class="imag">
             <div class="itmtext">
               <h4>Hôtel chez Amina</h4>
               <p>nuit à partir de <a class="value">96&euro;</a></p>
@@ -100,23 +101,26 @@
         <h4>Afficher plus</h4>
       </div>
       <div id="populaire">
-        <h3>Les plus populaires &#9733</h3>
+        <h3>Les plus populaires <a class="ecart">&#9733;</a></h3>
         <div id=block>
-          <div class="items"><img src="siteweb_files/soleil.jpg" alt="Hôtel le Soleil du Matin" id="image">
+          <div class="items">
+            <img src="siteweb_files/soleil.jpg" alt="Hôtel le Soleil du Matin" class="image">
             <div class="itmtexts">
               <h4>Hôtel le Soleil du Matin</h4>
               <p>nuit à partir de <a class="value">128&euro;</a></p>
               <P class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</P>
             </div>
           </div>
-          <div class="items"><img src="siteweb_files/coeur.jpg" alt="Au coeur de l'eau Chambre d'Hôtel" id="image">
+          <div class="items">
+            <img src="siteweb_files/coeur.jpg" alt="Au coeur de l'eau Chambre d'Hôtel" class="image">
             <div class="itmtexts">
               <h4>Au coeur de l'eau Chambre d'Hôtel</h4>
               <p>nuit à partir de <a class="value">71&euro;</a></p>
               <P class="etoile">&#9733;&#9733;&#9733;&#9733;<a class="opacité">&#10032;</a></P>
             </div>
           </div>
-          <div class="items"><img src="siteweb_files/bleublanc.jpg" alt="Hôtel Tout Bleu et Blanc" id="image">
+          <div class="items">
+            <img src="siteweb_files/bleublanc.jpg" alt="Hôtel Tout Bleu et Blanc" class="image">
             <div class="itmtexts">
               <h4>Hôtel Tout Bleu et Blanc</h4>
               <p>nuit à partir de <a class="value">68&euro;</a></p>
@@ -129,39 +133,45 @@
     <div id="activité_marseille">
       <h3>les activités à marseille</h3>
       <div id="dilem">
-        <div id="unique">
-          <div class="iten"><img src="siteweb_files/vieuxport.jpg" alt="Vieux port" id="imge">
+        <div class="unique">
+          <div class="iten">
+            <img src="siteweb_files/vieuxport.jpg" alt="Vieux port" class="imge">
             <div class="itmtext">
               <h4>Vieux port</h4>
             </div>
           </div>
         </div>
-        <div id="double">
-          <div class="itenn"><img src="siteweb_files/pomegue.jpg" alt="port de pomègues" id="imagee">
+        <div class="double">
+          <div class="itenn">
+            <img src="siteweb_files/pomegue.jpg" alt="port de pomègues" class="imagee">
             <div class="itmtext">
               <h4>port de pomègues</h4>
             </div>
           </div>
-          <div class="itenn"><img src="siteweb_files/fioul.jpg" alt="Iles du Frioul" id="imgee">
+          <div class="itenn">
+            <img src="siteweb_files/fioul.jpg" alt="Iles du Frioul" class="imgee">
             <div class="itmtext">
               <h4>Iles du Frioul</h4>
             </div>
           </div>
         </div>
-        <div id="unique">
-          <div class="iten"><img src="siteweb_files/calandre.jpg" alt="parc National des calanques" id="imge">
+        <div class="unique">
+          <div class="iten">
+            <img src="siteweb_files/calandre.jpg" alt="parc National des calanques" class="imge">
             <div class="itmtext">
               <h4>parc National des calanques</h4>
             </div>
           </div>
         </div>
-        <div id="double">
-          <div class="itenn"><img src="siteweb_files/n-d-garde.jpg" alt="Notre-Dame-de-la-Garde" id="imgee">
+        <div class="double">
+          <div class="itenn">
+            <img src="siteweb_files/n-d-garde.jpg" alt="Notre-Dame-de-la-Garde" class="imgee">
             <div class="itmtext">
               <h4>Notre-Dame-de-la-Garde</h4>
             </div>
           </div>
-          <div class="itenn"><img src="siteweb_files/longchamp.jpg" alt="parc Longchamp" id="imagee">
+          <div class="itenn">
+            <img src="siteweb_files/longchamp.jpg" alt="parc Longchamp" class="imagee">
             <div class="itmtext">
               <h4>parc Longchamp</h4>
             </div>
