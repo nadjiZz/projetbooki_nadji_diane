@@ -7,41 +7,29 @@ header {
     margin: 1% 2% 3% 2%;
     display: flex;
     flex-direction: column;
-    background-color: white;
 }
 nav #navigation {
-    float: right;
     display: flex;
     flex-shrink: initial;
     align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: auto;
+    width: 100%;
 }
 nav a {
     padding: 2rem;
-    text-decoration: none;   
+    text-decoration: none;
+    float: right;
+    color: black;   
 }
 nav a:hover {
     text-decoration:overline;
-    float: right;
-}
-.active {
-    float: right;
-    margin-right: 10%;
-}
-
-.floatright {
-    float: right;
-}
-.Imgbooki{
-    background-color: #f2f2f2;
+    color: #0065fc;
 }
 .orientation {
-    padding: 0 1rem 0 2rem;
+    padding: 1rem auto 1rem 0;
 }
 .recherche {
-    margin-bottom: 2%;
     border-radius: 1rem;
     display: flex;
     float: left;
@@ -67,14 +55,13 @@ nav a:hover {
 }
 .recherche button:hover {
     opacity: 0.8;
-    transform: scale(1.03);
+    transform: scale(1.1);
 }
 .filtre {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    
 }
 .filtrelist {
     display: flex;
@@ -110,14 +97,15 @@ nav a:hover {
     cursor: pointer;
 }
 .listfiltre p {
+    margin-left: 0;
     padding: 0 0.5rem 0 0.5rem;
 }
 .listfiltre:hover {
     background-color: #f3f8ff;
     transform: scale(1.02);
 }
-.fa-solid fa-circle-info {
-    padding: 1%;
+.info {
+  gap: 1rem;
 }
 /* le corp de la page */
 #contenu {
@@ -125,7 +113,6 @@ nav a:hover {
     margin: 1% 2% 3% 2%;
     display: flex;
     flex-wrap: nowrap;
-    margin-bottom: 2rem;
 }
 .info {
     display: flex;
@@ -136,16 +123,16 @@ nav a:hover {
 .hebergement_marseille {
     border-radius: 5%;
     flex-basis: 65%;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     background-color: whitesmoke; 
 }
 .ligne {
     display: flex;
     flex-wrap: nowrap;
-    position: relative;
     justify-content: space-around;
     }
 .item {
+    background-color: white;
     display: flex;
     flex-direction: column;
     border-radius: 10%;
@@ -154,7 +141,7 @@ nav a:hover {
 }
 .itmtext {
     padding: 0;
-    float: left;
+    align-items: stretch;
 }
 .etoile {
     color: blue;
@@ -172,11 +159,14 @@ nav a:hover {
 img{
     max-width: 100%;    
 }
+img:hover {
+    transform: scale(1.02);
+}
 .image{
     border-bottom-left-radius: 10%;
     border-top-left-radius: 10%;
     height: 13em;
-    width: 10em;
+    width: 8em;
     justify-content: space-between; 
 }
 .imgee {
@@ -207,6 +197,15 @@ img{
     flex-basis: 33%;
     max-width: 100%;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.items {
+    background-color: white;
+    display: flex; 
+    border-radius: 10%;
+    padding: 1rem;
 }
 .block {
     box-sizing: border-box;
@@ -216,18 +215,6 @@ img{
 }
 .ecart {
     float: right;
-}
-h3 {
-    justify-content: center;
-    margin-left: 4rem;
-}
-h4 p {
-    margin-left: 4rem;
-}
-.items {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
 }
 #activité_marseille {
     margin: 1% 2% 3% 2%;
@@ -249,20 +236,19 @@ h4 p {
 .iten {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 .itenn {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 /* pied de la page */
 footer {
     display: flex;
-    flex-wrap: wrap;
     background-color:whitesmoke;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 .propos {
     justify-content: center;
