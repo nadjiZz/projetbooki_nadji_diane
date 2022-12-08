@@ -244,6 +244,7 @@ img{
 /* pied de la page */
 footer {
     display: flex;
+    flex-wrap: wrap;
     background-color:whitesmoke;
     justify-content: center;
     align-items: center;
