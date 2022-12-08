@@ -3,43 +3,67 @@
     box-sizing: border-box;
 }
 /* css de l'entete de la page */
+<<<<<<< HEAD
+header {
+    margin: 1% 2% 3% 2%;
+=======
 #entete {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: baseline;
 }
 nav {
+>>>>>>> a5b77907cdee6b64143e0d754e7e9ec5e33241ec
     display: flex;
+    flex-direction: column;
+}
+nav #navigation {
+    display: flex;
+    flex-shrink: initial;
     align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: auto;
+    width: 100%;
 }
 nav a {
     padding: 2rem;
-    text-decoration: none;   
+    text-decoration: none;
+    float: right;
+    color: black;   
 }
 nav a:hover {
+<<<<<<< HEAD
+    text-decoration:overline;
+    color: #0065fc;
+}
+.orientation {
+    padding: 1rem auto 1rem 0;
+}
+.recherche {
+=======
     text-decoration:overline ;
 }
 .Imgbooki{
-    margin-right: auto;
-    height: 2rem;
-    width: 5rem;
-    margin: 0 auto 0 2rem;
+    
+    justify-content: center;
+    width: 15rem;
 }
 .orientation {
-    padding: 0 2rem 0 2rem;
+
+    padding: 0 1rem 0 2rem;
 }
 .recherche {
+    border: 1px solid black;
+>>>>>>> a5b77907cdee6b64143e0d754e7e9ec5e33241ec
+    border-radius: 1rem;
     display: flex;
-    justify-content: center;
-   
+    float: left;
 }
+
 .recherche i {
-    padding: 1rem;
     background-color:lightgrey;
-    border: 1px solide black;
+    color: black;
     border-radius: 1rem 0 0 1rem; 
 }
 .recherche input {
@@ -53,15 +77,15 @@ nav a:hover {
     color: white;
     font-weight: bold;
     width: 7rem;
+    cursor: pointer;
     transition: transform 200ms;
 }
 .recherche button:hover {
     opacity: 0.8;
-    transform: scale(1.03);
+    transform: scale(1.1);
 }
 .filtre {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
@@ -73,11 +97,19 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-.fa-solid {
+.listfiltre .fa-solid {
     color: blue;
     background-color: #deebff;
     border-radius: 50%;
     height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-sharp {
+    border-radius: 50%;
+    height: 3.5rem;
     width: 3rem;
     display: flex;
     align-items: center;
@@ -89,58 +121,86 @@ nav a:hover {
     height: 3rem;
     border-radius: 2rem;
     align-items: center;
+    cursor: pointer;
 }
 .listfiltre p {
-    padding: 0 1rem 0 0.5rem;
+    margin-left: 0;
+    padding: 0 0.5rem 0 0.5rem;
 }
 .listfiltre:hover {
     background-color: #f3f8ff;
     transform: scale(1.02);
 }
+<<<<<<< HEAD
+.info {
+  gap: 1rem;
+}
+/* le corp de la page */
+#contenu {
+    gap: 1rem;
+    margin: 1% 2% 3% 2%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.info {
+    display: flex;
+}
+.info fa-solid fa-circle-info {
+    text-decoration: none;
+}
+.hebergement_marseille {
+    border-radius: 5%;
+    flex-basis: 65%;
+    padding: 1rem 1rem 0 1rem;
+    background-color: whitesmoke; 
+}
+.ligne {
+    display: flex;
+    flex-wrap: nowrap;
+=======
 /* le corp de la page */
 #corps {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    padding-bottom: 2%;
+    justify-content: center;
+    align-items: flex-start;
 
     }
-#contenu {
+.contenu {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
-#hebergement_marseille {
+.hebergement_marseille {
+    padding: 0;
     position: relative;
     border-radius: 5%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     background-color: rgb(226, 218, 218);
-    height: 55rem;
+    height: auto;
+    flex-basis:64%;  
 }
-.ligne1 {
+.ligne {
     display: flex;
-    flex-wrap: wrap;
     position: relative;
+>>>>>>> a5b77907cdee6b64143e0d754e7e9ec5e33241ec
     justify-content: space-around;
     }
-.ligne2 {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: space-around;
-}
 .item {
+    background-color: white;
     display: flex;
     flex-direction: column;
-    background-color: white;
     border-radius: 10%;
-    justify-content: space-around;
     padding: 1rem;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0em 0em 1em 0em;
 }
 .itmtext {
     padding: 0;
-    float: left;
+    align-items: stretch;
 }
 .etoile {
     color: blue;
@@ -148,96 +208,97 @@ nav a:hover {
 .opacité{
     opacity: 0.5;
 }
-#imag{
+.imag{
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
-    height: 10em;
-    width: 13em;
+    height: 7em;
+    width: 12em;
     justify-content: space-between;   
 }
 img{
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    object-fit: cover;    
+    max-width: 100%;    
 }
-#image{
+<<<<<<< HEAD
+img:hover {
+    transform: scale(1.02);
+}
+=======
+>>>>>>> a5b77907cdee6b64143e0d754e7e9ec5e33241ec
+.image{
     border-bottom-left-radius: 10%;
     border-top-left-radius: 10%;
     height: 13em;
-    width: 13em;
+    width: 8em;
     justify-content: space-between; 
 }
-#imgee {
+.imgee {
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
     height: 8em;
     width: 15em;
     justify-content: space-between;
 }
-#imge {
+.imge {
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
-    height: 25em;
+    height: 20em;
     width: 15em;
     justify-content: space-between;
 }
-#imagee {
+.imagee {
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
-    height: 9em;
+    height: 8em;
     width: 15em;
     justify-content: space-between;
 }
 #populaire{
-    position: relative;
-    background-color:  rgb(226, 218, 218);
+    width: 90%;
+    background-color:  whitesmoke;
     border-radius: 3%;
+    flex-basis: 33%;
+    max-width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.items {
+    background-color: white;
+    display: flex; 
+    border-radius: 10%;
+    padding: 1rem;
+}
+.block {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+    padding: 0 0 0.5% 0;
+=======
+    margin-left: 0.5%;
+    padding: 0 0 0.5% 0;
+    justify-content: center;
+    flex-basis: 30%;
+    order: -;
+>>>>>>> a5b77907cdee6b64143e0d754e7e9ec5e33241ec
+}
+.ecart {
     float: right;
-    margin-left: 1%;
-    padding: 1%;
-    height: 55rem;
-    justify-content: center;
-}
-h3 {
-    justify-content: center;
-}
-#block {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.items {
-    display: flex;
-    background-color: white;
-    border-radius: 10%;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding: 1rem;
-    margin: 1rem 1rem 1rem 1rem;
 }
 #activité_marseille {
-    width: 100%;
-    height: 35rem;
-    background-color: white;
+    margin: 1% 2% 3% 2%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-
 }
 #dilem {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
-#unique {
+.unique {
     margin: 0 1% 0 0;
 }
-#double {
+.double {
     display: flex;
     flex-direction: column;
     margin: 0 1% 0 0;
@@ -245,22 +306,21 @@ h3 {
 .iten {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 .itenn {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
 }
-
 /* pied de la page */
 footer {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(228, 234, 236);
+    background-color:whitesmoke;
     justify-content: center;
+    align-items: stretch;
 }
 .propos {
     justify-content: center;
-    margin: 0 10rem 1rem 3rem;
+    margin: 0 5rem 1rem 3rem;
 }
