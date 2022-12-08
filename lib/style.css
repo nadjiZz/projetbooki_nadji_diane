@@ -3,18 +3,8 @@
     box-sizing: border-box;
 }
 /* css de l'entete de la page */
-<<<<<<< HEAD
 header {
     margin: 1% 2% 3% 2%;
-=======
-#entete {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: baseline;
-}
-nav {
->>>>>>> a5b77907cdee6b64143e0d754e7e9ec5e33241ec
     display: flex;
     flex-direction: column;
 }
@@ -33,7 +23,6 @@ nav a {
     color: black;   
 }
 nav a:hover {
-<<<<<<< HEAD
     text-decoration:overline;
     color: #0065fc;
 }
@@ -41,26 +30,10 @@ nav a:hover {
     padding: 1rem auto 1rem 0;
 }
 .recherche {
-=======
-    text-decoration:overline ;
-}
-.Imgbooki{
-    
-    justify-content: center;
-    width: 15rem;
-}
-.orientation {
-
-    padding: 0 1rem 0 2rem;
-}
-.recherche {
-    border: 1px solid black;
->>>>>>> a5b77907cdee6b64143e0d754e7e9ec5e33241ec
     border-radius: 1rem;
     display: flex;
     float: left;
 }
-
 .recherche i {
     background-color:lightgrey;
     color: black;
@@ -131,9 +104,8 @@ nav a:hover {
     background-color: #f3f8ff;
     transform: scale(1.02);
 }
-<<<<<<< HEAD
-.info {
-  gap: 1rem;
+.fa-solid fa-circle-info {
+    padding: 1%;
 }
 /* le corp de la page */
 #contenu {
@@ -141,6 +113,7 @@ nav a:hover {
     margin: 1% 2% 3% 2%;
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 2rem;
 }
 .info {
     display: flex;
@@ -151,43 +124,12 @@ nav a:hover {
 .hebergement_marseille {
     border-radius: 5%;
     flex-basis: 65%;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem;
     background-color: whitesmoke; 
 }
 .ligne {
     display: flex;
     flex-wrap: nowrap;
-=======
-/* le corp de la page */
-#corps {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2%;
-    justify-content: center;
-    align-items: flex-start;
-
-    }
-.contenu {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-}
-.hebergement_marseille {
-    padding: 0;
-    position: relative;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(226, 218, 218);
-    height: auto;
-    flex-basis:64%;  
-}
-.ligne {
-    display: flex;
-    position: relative;
->>>>>>> a5b77907cdee6b64143e0d754e7e9ec5e33241ec
     justify-content: space-around;
     }
 .item {
@@ -200,7 +142,7 @@ nav a:hover {
 }
 .itmtext {
     padding: 0;
-    align-items: stretch;
+    float: left;
 }
 .etoile {
     color: blue;
@@ -218,12 +160,6 @@ nav a:hover {
 img{
     max-width: 100%;    
 }
-<<<<<<< HEAD
-img:hover {
-    transform: scale(1.02);
-}
-=======
->>>>>>> a5b77907cdee6b64143e0d754e7e9ec5e33241ec
 .image{
     border-bottom-left-radius: 10%;
     border-top-left-radius: 10%;
@@ -260,7 +196,6 @@ img:hover {
     max-width: 100%;
     padding: 1rem;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
 }
 .items {
@@ -268,20 +203,13 @@ img:hover {
     display: flex; 
     border-radius: 10%;
     padding: 1rem;
+    margin: 0em 0em 1em 0em;
 }
 .block {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     padding: 0 0 0.5% 0;
-=======
-    margin-left: 0.5%;
-    padding: 0 0 0.5% 0;
-    justify-content: center;
-    flex-basis: 30%;
-    order: -;
->>>>>>> a5b77907cdee6b64143e0d754e7e9ec5e33241ec
 }
 .ecart {
     float: right;
@@ -306,19 +234,20 @@ img:hover {
 .iten {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
 }
 .itenn {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
 }
 /* pied de la page */
 footer {
     display: flex;
+    flex-wrap: wrap;
     background-color:whitesmoke;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
 }
 .propos {
     justify-content: center;
