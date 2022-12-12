@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="Fr">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +9,15 @@
   <link rel="shortcut icon" href="siteweb_files/Booki.png">
   <script src="https://kit.fontawesome.com/174fd1685f.js" crossorigin="anonymous"></script>
   <title>Booki</title>
-
-  <!--section css -->
+  <!-- Liens vers les media-queries : -->
+  <link rel="stylesheet" href="./css/media-query-tab.css" media="screen and (min-width: 760px) and (max-width: 991px)"> <!-- Pour Tablettes -->
+  <link rel="stylesheet" href="./css/media-query-mob.css" media="screen and (max-width:759px)"> <!-- Pour Mobiles -->
+  <!--Lien pour le css -->
   <link rel="stylesheet" href="lib/style.css">
 </head>
 <!-- corps du projet -->
 <body>
   <header>
-      <!-- la nav bar -->
       <nav id="navigation">
             <img class="Imgbooki" src="siteweb_files/Booki.png" alt="logo_Booki">
               <a href="active">Hebergements</a>
@@ -33,7 +33,7 @@
           <button>Recherche</button>
         </div>
         <div class="filtre">
-            <p>Filtres<p>
+            <div class="titrefiltre">Filtres</div>
             <div class="filtrelist">
               <div class="listfiltre"><i class="fa-solid fa-money-bill-wave"></i><p>Economique</p></div>
               <div class="listfiltre"><i class="fa-solid fa-child-reaching"></i><p>Familial</p></div>
@@ -41,34 +41,53 @@
               <div class="listfiltre"><i class="fa-solid fa-dog"></i><p>Animaux autorisés</p></div>
             </div>
         </div>
-      <div class="info"><i class="fa-solid fa-circle-info"></i>
-        Plus de 500 logements sont disponibles dans cette ville</div>
-  </header>
+      <div class="info"><i class="fas fa-info"></i>
+      <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
+    </header>
   <section id="contenu">
       <div class="hebergement_marseille">
         <h3>Hebergement à Marseille</h3>
         <div class=ligne>
           <div class="item"><img src="siteweb_files/cannebiere.jpg" alt="Auberge la canebiere" class="imag">
             <div class="itmtext">
-              <h4>Auberge la canebiere</h4>
+              <h5>Auberge la canebiere</h5>
               <p>nuit à partir de <a class="value">25&euro;</a></p>
-              <P class="etoile">&#9733;&#9733;&#9733;&#9733;<a class="opacité">&#10032;</a></P>
+              <span class="stars flex-row">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+            </span>
             </div>
           </div>
           <div class="item">
             <img src="siteweb_files/port.jpg" alt="Hôtel du Port" class="imag">
             <div class="itmtext">
-              <h4>Hôtel du Port</h4>
+              <h5>Hôtel du Port</h5>
               <p>nuit à partir de <a class="value">52&euro;</a></p>
-              <P class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</P>
+              <span class="stars flex-row">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
             </div>
           </div>
           <div class="item">
             <img src="siteweb_files/mouette.jpg" alt="Hôtel les Mouettes" class="imag">
             <div class="itmtext">
-              <h4>Hôtel les Mouettes</h4>
+              <h5>Hôtel les Mouettes</h5>
               <p>nuit à partir de <a class="value">76&euro;</a></p>
-              <P class="etoile">&#9733;&#9733;&#9733;&#9733;<a class="opacité">&#10032;</a></P>
+              <span class="stars flex-row">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
             </div>
           </div>
         </div>
@@ -76,55 +95,91 @@
           <div class="item">
             <img src="siteweb_files/mer.jpg" alt="Hôtel de la Mer" class="imag">
             <div class="itmtext">
-              <h4>Hôtel de la Mer</h4>
-              <p>nuit à partir de <a class="value">46&euro;</a></p>
-              <P class="etoile">&#9733;&#9733;&#9733;<a class="opacité">&#10032;&#10032;</a></P>
+              <h5>Hôtel de la Mer</h5>
+              <p>nuit à partir de </p>
+              <span class="stars flex-row">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
             </div>
           </div>
           <div class="item">
             <img src="siteweb_files/panier.jpg" alt="Auberge le Panier" class="imag">
             <div class="itmtext">
-              <h4>Auberge le Panier</h4>
+              <h5>Auberge le Panier</h5>
               <p>nuit à partir de <a class="value">23&euro;</a></p>
-              <P class="etoile">&#9733;&#9733;&#9733;&#9733;<a class="opacité">&#10032;</a></P>
+              <span class="stars flex-row">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+            </span>
             </div>
           </div>
           <div class="item">
             <img src="siteweb_files/amina.jpg" alt="Hôtel chez Amina" class="imag">
             <div class="itmtext">
-              <h4>Hôtel chez Amina</h4>
+              <h5>Hôtel chez Amina</h5>
               <p>nuit à partir de <a class="value">96&euro;</a></p>
-              <P class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;<a class="opacité"></a></P>
+              <span class="stars flex-row">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+            </span>
             </div>
           </div>
         </div>
-        <a href="Afficher plus">Afficher plus</a>
+        <p>Afficher plus</p>
       </div>
       <div id="populaire">
-        <h3>Les plus populaires <a class="ecart">&#9733;</a></h3>
+        <h3 class="espacement">Les plus populaires <i class="fas fa-star star"></i></h3>
         <div class=block>
           <div class="items">
             <img src="siteweb_files/soleil.jpg" alt="Hôtel le Soleil du Matin" class="image">
             <div class="itmtext">
-              <h4>Hôtel le Soleil du Matin</h4>
+              <h5>Hôtel le Soleil du Matin</h5>
               <p>nuit à partir de <a class="value">128&euro;</a></p>
-              <P class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</P>
+              <span class="stars">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+            </span>
             </div>
           </div>
           <div class="items">
             <img src="siteweb_files/coeur.jpg" alt="Au coeur de l'eau Chambre d'Hôtel" class="image">
             <div class="itmtext">
-              <h4>Au coeur de l'eau Chambre d'Hôtel</h4>
+              <h5>Au coeur de l'eau Chambre d'Hôtel</h5>
               <p>nuit à partir de <a class="value">71&euro;</a></p>
-              <P class="etoile">&#9733;&#9733;&#9733;&#9733;<a class="opacité">&#10032;</a></P>
+              <span class="stars flex-row">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
             </div>
           </div>
           <div class="items">
             <img src="siteweb_files/bleublanc.jpg" alt="Hôtel Tout Bleu et Blanc" class="image">
             <div class="itmtext">
-              <h4>Hôtel Tout Bleu et Blanc</h4>
+              <h5>Hôtel Tout Bleu et Blanc</h5>
               <p>nuit à partir de <a class="value">68&euro;</a></p>
-              <P class="etoile">&#9733;&#9733;&#9733;&#9733;<a class="opacité">&#10032;</a></P>
+              <span class="stars flex-row">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
             </div>
           </div>
         </div>
@@ -137,7 +192,7 @@
             <div class="iten">
               <img src="siteweb_files/vieuxport.jpg" alt="Vieux port" class="imge">
               <div class="itmtext">
-                <h4>Vieux port</h4>
+                <h5>Vieux port</h5>
               </div>
             </div>
           </div>
@@ -145,13 +200,13 @@
             <div class="itenn">
               <img src="siteweb_files/pomegue.jpg" alt="port de pomègues" class="imagee">
               <div class="itmtext">
-                <h4>port de pomègues</h4>
+                <h5>port de pomègues</h5>
               </div>
             </div>
             <div class="itenn">
               <img src="siteweb_files/fioul.jpg" alt="Iles du Frioul" class="imgee">
               <div class="itmtext">
-                <h4>Iles du Frioul</h4>
+                <h5>Iles du Frioul</h5>
               </div>
             </div>
           </div>
@@ -159,7 +214,7 @@
             <div class="iten">
               <img src="siteweb_files/calandre.jpg" alt="parc National des calanques" class="imge">
               <div class="itmtext">
-                <h4>parc National des calanques</h4>
+                <h5>parc National des calanques</h5>
               </div>
             </div>
           </div>
@@ -167,34 +222,34 @@
             <div class="itenn">
               <img src="siteweb_files/n-d-garde.jpg" alt="Notre-Dame-de-la-Garde" class="imgee">
               <div class="itmtext">
-                <h4>Notre-Dame-de-la-Garde</h4>
+                <h5>Notre-Dame-de-la-Garde</h5>
               </div>
             </div>
             <div class="itenn">
               <img src="siteweb_files/longchamp.jpg" alt="parc Longchamp" class="imagee">
               <div class="itmtext">
-                <h4>parc Longchamp</h4>
+                <h5>parc Longchamp</h5>
               </div>
             </div>
           </div>
         </div>
     </div>
   <footer>
-      <div class="propos">
+      <div class="foot">
         <h3>A propos</h3>
-          <p>Fonctionement du site</p>
-          <p>Condition générale de vente</p>
-          <p>Données et confidentialité</p>
+          <a href="#" class="foot_element">Fonctionement du site</a>
+          <a href="#" class="foot_element">Condition générale de vente</a>
+          <a href="#" class="foot_element">Données et confidentialité</a>
       </div>
-      <div class="propos">
+      <div class="foot">
         <h3>Nos hebergements</h3>
-          <p>Charte qualité</p>
-          <p>Soumettre votre hôtel</p>
+          <a href="#" class="foot_element">Charte qualité</a>
+          <a href="#" class="foot_element">Soumettre votre hôtel</a>
       </div>
-      <div class="propos">
+      <div class="foot">
         <h3>Assistance</h3>
-          <p>centre d'aide</p>
-          <p>Nous contacter</p>
+          <a href="#" class="foot_element">Centre d'aide</a>
+          <a href="#" class="foot_element">Nous contacter</a>
       </div>
   </footer>
 </body>
