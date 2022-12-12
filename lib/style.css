@@ -1,10 +1,10 @@
-* {
+*  body {
     font-family: "times new roman","Raleway", "Sans serif";
     box-sizing: border-box;
 }
 /* css de l'entete de la page */
 header {
-    margin: 1% 2% 3% 2%;
+    margin: 3% 2% 3% 2%;
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +14,7 @@ nav #navigation {
     align-items: center;
     justify-content: space-around;
     margin-top: auto;
-    width: 100%;
+    min-width: 10%;
 }
 nav a {
     padding: 2rem;
@@ -29,6 +29,7 @@ nav a:hover {
 .orientation {
     padding: 1rem auto 1rem 0;
 }
+/* Recherche */
 .recherche {
     border-radius: 1rem;
     display: flex;
@@ -57,6 +58,7 @@ nav a:hover {
     opacity: 0.8;
     transform: scale(1.1);
 }
+/* Filtre */
 .titrefiltre {
     padding: 0 0.5rem 0 0.5rem;
 }
@@ -64,6 +66,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    margin: 1rem 0 0.5rem 0;
     justify-content: flex-start;
 }
 .filtrelist {
@@ -121,11 +124,17 @@ nav a:hover {
 .info {
     display: flex;
 }
-.info .fa-solid  {
-    text-decoration: none;
-    color: white;
-    background-color: none;
+.info p {
+    margin: 1rem;
 }
+.info .fas  {
+    border: 2px solid rgb(238, 236, 236);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+/* hebergement_marseille */
 .hebergement_marseille {
     border-radius: 5%;
     flex-basis: 65%;
@@ -145,10 +154,6 @@ nav a:hover {
     border-radius: 10%;
     padding: 0.5rem;
     margin: 1em 0em 0em 0em;
-}
-.itmtext {
-    padding: 0;
-    float: left;
 }
 .espacement .fas {
     float: right;
@@ -197,6 +202,7 @@ img:hover {
     width: 15em;
     justify-content: space-between;
 }
+/* Les plus populaires */
 #populaire{
     width: 90%;
     background-color:  whitesmoke;
@@ -228,6 +234,7 @@ img:hover {
 .ecart {
     float: right;
 }
+/* Activités marseille */
 #activité_marseille {
     margin: 1% 2% 3% 2%;
     display: flex;
@@ -267,12 +274,19 @@ span {
 /* pied de la page */
 footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
     background-color:whitesmoke;
-    justify-content: center;
-    align-items: center;
 }
-.propos {
-    justify-content: center;
-    margin: 0 5rem 1rem 3rem;
+.foot {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: flex-start;
+    padding: 0 2% 0 2%;
+    
+}
+.foot_element {
+    text-decoration: none;
+    color: black;
 }

@@ -9,8 +9,10 @@
   <link rel="shortcut icon" href="siteweb_files/Booki.png">
   <script src="https://kit.fontawesome.com/174fd1685f.js" crossorigin="anonymous"></script>
   <title>Booki</title>
-
-  <!--section css -->
+  <!-- Liens vers les media-queries : -->
+  <link rel="stylesheet" href="./css/media-query-tab.css" media="screen and (min-width: 760px) and (max-width: 991px)"> <!-- Pour Tablettes -->
+  <link rel="stylesheet" href="./css/media-query-mob.css" media="screen and (max-width:759px)"> <!-- Pour Mobiles -->
+  <!--Lien pour le css -->
   <link rel="stylesheet" href="lib/style.css">
 </head>
 <!-- corps du projet -->
@@ -39,8 +41,8 @@
               <div class="listfiltre"><i class="fa-solid fa-dog"></i><p>Animaux autorisés</p></div>
             </div>
         </div>
-      <div class="info"><i class="fa-duotone fa-circle-info"></i>
-      Plus de 500 logements sont disponibles dans cette ville
+      <div class="info"><i class="fas fa-info"></i>
+      <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
     </header>
   <section id="contenu">
@@ -233,21 +235,21 @@
         </div>
     </div>
   <footer>
-      <div class="propos">
+      <div class="foot">
         <h3>A propos</h3>
-          <p>Fonctionement du site</p>
-          <p>Condition générale de vente</p>
-          <p>Données et confidentialité</p>
+          <a href="#" class="foot_element">Fonctionement du site</a>
+          <a href="#" class="foot_element">Condition générale de vente</a>
+          <a href="#" class="foot_element">Données et confidentialité</a>
       </div>
-      <div class="propos">
+      <div class="foot">
         <h3>Nos hebergements</h3>
-          <p>Charte qualité</p>
-          <p>Soumettre votre hôtel</p>
+          <a href="#" class="foot_element">Charte qualité</a>
+          <a href="#" class="foot_element">Soumettre votre hôtel</a>
       </div>
-      <div class="propos">
+      <div class="foot">
         <h3>Assistance</h3>
-          <p>centre d'aide</p>
-          <p>Nous contacter</p>
+          <a href="#" class="foot_element">Centre d'aide</a>
+          <a href="#" class="foot_element">Nous contacter</a>
       </div>
   </footer>
 </body>
