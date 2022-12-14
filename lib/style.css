@@ -118,7 +118,6 @@ nav a:hover {
     gap: 1rem;
     margin: 1% 2% 3% 2%;
     display: flex;
-    flex-wrap: nowrap;
     margin-bottom: 2rem;
 }
 .info {
@@ -238,6 +237,8 @@ img:hover {
 #activité_marseille {
     margin: 1% 2% 3% 2%;
     display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
     flex-direction: column;
 }
 #dilem {
@@ -262,13 +263,7 @@ img:hover {
     flex-direction: column;
     align-items: flex-start;
 }
-h5{
-    margin-left: 8%;
-}
-p{
-    margin-left: 8%;
-}
-span {
+h5 p span {
     margin-left: 8%;
 }
 /* pied de la page */
@@ -290,3 +285,27 @@ footer {
     text-decoration: none;
     color: black;
 }
+/* pour les tablettes */
+@import url("testimport.css") screen and (max-width: 1500px);
+@media screen and (max-width: 600px){
+    .contenu {
+        display: flex;
+        flex-direction: column-reverse;
+   }
+    .populaire {
+        display: flex;
+        width: 90%;
+    }
+    .dilem {
+        width: 90%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p {
+        color: blue;
+    }
+}
+/* pour les telephones */
