@@ -157,6 +157,7 @@ nav a:hover {
     margin: 1em 0em 0em 0em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .itemtext {
     display: flex;
     flex-direction: column;
@@ -164,6 +165,26 @@ nav a:hover {
 .itmtext {
     padding: 1rem;
     float: left;
+=======
+.itmtext {
+    padding: 1rem;
+    float: left;
+}
+h5 {
+    margin-left: 1rem;
+}
+.stars {
+    color: blue;
+}
+.value {
+    font-weight: bold;
+}
+.espacement .fas  {
+float: right;
+}  
+.opacité{
+    opacity: 0.5;
+>>>>>>> 0bfc8666ada72ba94d7339fe814b3726fb2552ca
 }
 h5 {
     margin-left: 1rem;
@@ -205,11 +226,14 @@ float: right;
     justify-content: space-between;   
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 img :hover { 
     transform: scale(1.02);
 }
 .image {
 =======
+=======
+>>>>>>> 0bfc8666ada72ba94d7339fe814b3726fb2552ca
 img{
     max-width: 100%;    
 }
@@ -301,8 +325,12 @@ img{
 footer {
     background-color: #f2f2f2;
 <<<<<<< HEAD
+<<<<<<< HEAD
     display: flex;
 }
+=======
+    display: flex;}
+>>>>>>> 0bfc8666ada72ba94d7339fe814b3726fb2552ca
 =======
     display: flex;}
 >>>>>>> 0bfc8666ada72ba94d7339fe814b3726fb2552ca
@@ -318,6 +346,7 @@ footer {
     text-decoration: none;
     color: black;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 @media (max-width: 1024px) {
     #contenu {
@@ -376,6 +405,9 @@ footer {
         align-items: center;
     }
 }
+=======
+
+>>>>>>> 0bfc8666ada72ba94d7339fe814b3726fb2552ca
 =======
 
 >>>>>>> 0bfc8666ada72ba94d7339fe814b3726fb2552ca
