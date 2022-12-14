@@ -116,6 +116,7 @@ nav a:hover {
     gap: 1rem;
     margin: 1% 2% 3% 2%;
     display: flex;
+    flex-wrap: nowrap;
     margin-bottom: 2rem;
 }
 .info {
@@ -152,12 +153,33 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     border-radius: 10%;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 1em 0em 0em 0em;
 }
+<<<<<<< HEAD
 .itemtext {
     display: flex;
     flex-direction: column;
+=======
+.itmtext {
+    padding: 1rem;
+    float: left;
+}
+h5 {
+    margin-left: 1rem;
+}
+.stars {
+    color: blue;
+}
+.value {
+    font-weight: bold;
+}
+.espacement .fas  {
+float: right;
+}  
+.opacité{
+    opacity: 0.5;
+>>>>>>> 0bfc8666ada72ba94d7339fe814b3726fb2552ca
 }
 h5 {
     float: left;
@@ -182,10 +204,17 @@ float: right;
     width: 12em;
     justify-content: space-between;   
 }
+<<<<<<< HEAD
 img :hover { 
     transform: scale(1.02);
 }
 .image {
+=======
+img{
+    max-width: 100%;    
+}
+.image{
+>>>>>>> 0bfc8666ada72ba94d7339fe814b3726fb2552ca
     border-bottom-left-radius: 10%;
     border-top-left-radius: 10%;
     height: 10em;
@@ -271,8 +300,12 @@ img :hover {
 /* pied de la page */
 footer {
     background-color: #f2f2f2;
+<<<<<<< HEAD
     display: flex;
 }
+=======
+    display: flex;}
+>>>>>>> 0bfc8666ada72ba94d7339fe814b3726fb2552ca
 .foot {
     display: flex;
     flex-direction: column;
@@ -285,6 +318,7 @@ footer {
     text-decoration: none;
     color: black;
 }
+<<<<<<< HEAD
 @media (max-width: 1024px) {
     #contenu {
         display: flex;
@@ -342,3 +376,6 @@ footer {
         align-items: center;
     }
 }
+=======
+
+>>>>>>> 0bfc8666ada72ba94d7339fe814b3726fb2552ca
