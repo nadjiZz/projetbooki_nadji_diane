@@ -14,7 +14,6 @@ nav #navigation {
     align-items: center;
     justify-content: space-around;
     margin-top: auto;
-    width: 100%;
 }
 nav a {
     padding: 2rem;
@@ -30,6 +29,7 @@ nav a:hover {
     padding: 1rem auto 1rem 0;
 }
 .recherche {
+    justify-content: stretch;
     border-radius: 1rem;
     display: flex;
     float: left;
@@ -57,11 +57,15 @@ nav a:hover {
     opacity: 0.8;
     transform: scale(1.1);
 }
+/* Filtre */
 .filtre {
-    display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center;
+    margin: 1rem 0 0.5rem 0;
+    justify-content: flex-start;
+}
+.titrefiltre {
+    font-weight: bold;
+    padding: 0 0.5rem 0 0.5rem;
 }
 .filtrelist {
     display: flex;
@@ -118,9 +122,21 @@ nav a:hover {
 .info {
     display: flex;
 }
+.info p {
+    margin: 1em;
+}
+.info .fas  {
+    border: 2px solid rgb(238, 236, 236);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
 .info fa-solid fa-circle-info {
     text-decoration: none;
 }
+/* hebergement_marseille */
 .hebergement_marseille {
     border-radius: 5%;
     flex-basis: 65%;
@@ -129,7 +145,6 @@ nav a:hover {
 }
 .ligne {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-around;
     }
 .item {
@@ -138,15 +153,24 @@ nav a:hover {
     flex-direction: column;
     border-radius: 10%;
     padding: 1rem;
-    margin: 0em 0em 1em 0em;
+    margin: 1em 0em 0em 0em;
 }
 .itmtext {
-    padding: 0;
+    padding: 1rem;
     float: left;
 }
-.etoile {
+h5 {
+    margin-left: 1rem;
+}
+.stars {
     color: blue;
 }
+.value {
+    font-weight: bold;
+}
+.espacement .fas  {
+float: right;
+}  
 .opacité{
     opacity: 0.5;
 }
@@ -163,14 +187,14 @@ img{
 .image{
     border-bottom-left-radius: 10%;
     border-top-left-radius: 10%;
-    height: 13em;
+    height: 10em;
     width: 8em;
     justify-content: space-between; 
 }
 .imgee {
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
-    height: 8em;
+    height: 7em;
     width: 15em;
     justify-content: space-between;
 }
@@ -188,14 +212,13 @@ img{
     width: 15em;
     justify-content: space-between;
 }
-#populaire{
+#populaire {
     width: 90%;
     background-color:  whitesmoke;
     border-radius: 3%;
     flex-basis: 33%;
     max-width: 100%;
     padding: 1rem;
-    display: flex;
     justify-content: space-around;
 }
 .items {
@@ -207,8 +230,6 @@ img{
 }
 .block {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
     padding: 0 0 0.5% 0;
 }
 .ecart {
@@ -221,15 +242,17 @@ img{
 }
 #dilem {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .unique {
-    margin: 0 1% 0 0;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 0 lightgray;
 }
 .double {
+    gap: 0.5rem;
     display: flex;
     flex-direction: column;
-    margin: 0 1% 0 0;
+    justify-content: space-between;
 }
 .iten {
     display: flex;
@@ -237,19 +260,26 @@ img{
     align-items: center;
 }
 .itenn {
+    box-shadow: 0 0 10px 0 lightgray;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    border-radius: 10%;
 }
 /* pied de la page */
 footer {
+    background-color: #f2f2f2;
+    display: flex;}
+.foot {
     display: flex;
-    flex-wrap: wrap;
-    background-color:whitesmoke;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    width: 33%;
+    align-items: flex-start;
+    padding: 0 2% 0 2%;
+    
 }
-.propos {
-    justify-content: center;
-    margin: 0 5rem 1rem 3rem;
+.foot_element {
+    text-decoration: none;
+    color: black;
 }
+
