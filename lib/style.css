@@ -1,10 +1,10 @@
-*  body {
+* {
     font-family: "times new roman","Raleway", "Sans serif";
     box-sizing: border-box;
 }
 /* css de l'entete de la page */
 header {
-    margin: 3% 2% 3% 2%;
+    margin: 1% 2% 3% 2%;
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +14,6 @@ nav #navigation {
     align-items: center;
     justify-content: space-around;
     margin-top: auto;
-    min-width: 10%;
 }
 nav a {
     padding: 2rem;
@@ -29,8 +28,8 @@ nav a:hover {
 .orientation {
     padding: 1rem auto 1rem 0;
 }
-/* Recherche */
 .recherche {
+    justify-content: stretch;
     border-radius: 1rem;
     display: flex;
     float: left;
@@ -59,15 +58,14 @@ nav a:hover {
     transform: scale(1.1);
 }
 /* Filtre */
-.titrefiltre {
-    padding: 0 0.5rem 0 0.5rem;
-}
 .filtre {
-    display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem 0 0.5rem 0;
     justify-content: flex-start;
+}
+.titrefiltre {
+    font-weight: bold;
+    padding: 0 0.5rem 0 0.5rem;
 }
 .filtrelist {
     display: flex;
@@ -118,13 +116,14 @@ nav a:hover {
     gap: 1rem;
     margin: 1% 2% 3% 2%;
     display: flex;
+    flex-wrap: nowrap;
     margin-bottom: 2rem;
 }
 .info {
     display: flex;
 }
 .info p {
-    margin: 1rem;
+    margin: 1em;
 }
 .info .fas  {
     border: 2px solid rgb(238, 236, 236);
@@ -133,17 +132,19 @@ nav a:hover {
     justify-content: center;
     padding: 1em;
 }
+
+.info fa-solid fa-circle-info {
+    text-decoration: none;
+}
 /* hebergement_marseille */
 .hebergement_marseille {
     border-radius: 5%;
     flex-basis: 65%;
     padding: 1rem;
-    background-color: whitesmoke;
-    justify-content: space-between; 
+    background-color: whitesmoke; 
 }
 .ligne {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-around;
     }
 .item {
@@ -151,12 +152,27 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     border-radius: 10%;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 1em 0em 0em 0em;
 }
-.espacement .fas {
-    float: right;
-    color: black;
+.itmtext {
+    padding: 1rem;
+    float: left;
+}
+h5 {
+    margin-left: 1rem;
+}
+.stars {
+    color: blue;
+}
+.value {
+    font-weight: bold;
+}
+.espacement .fas  {
+float: right;
+}  
+.opacité{
+    opacity: 0.5;
 }
 .imag{
     border-top-left-radius: 10%;
@@ -166,12 +182,7 @@ nav a:hover {
     justify-content: space-between;   
 }
 img{
-    max-width: 100%;
-    cursor: pointer;    
-}
-img:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
+    max-width: 100%;    
 }
 .image{
     border-bottom-left-radius: 10%;
@@ -183,7 +194,7 @@ img:hover {
 .imgee {
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
-    height: 8em;
+    height: 7em;
     width: 15em;
     justify-content: space-between;
 }
@@ -201,78 +212,64 @@ img:hover {
     width: 15em;
     justify-content: space-between;
 }
-/* Les plus populaires */
-#populaire{
+#populaire {
     width: 90%;
     background-color:  whitesmoke;
     border-radius: 3%;
     flex-basis: 33%;
     max-width: 100%;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-}
-.fas {
-    color: blue;
 }
 .items {
     background-color: white;
     display: flex; 
     border-radius: 10%;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0em 0em 1em 0em;
-    font-size: small;
 }
 .block {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
     padding: 0 0 0.5% 0;
 }
 .ecart {
     float: right;
 }
-/* Activités marseille */
 #activité_marseille {
     margin: 1% 2% 3% 2%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
     flex-direction: column;
 }
 #dilem {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .unique {
-    margin: 0 1% 0 0;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 0 lightgray;
 }
 .double {
+    gap: 0.5rem;
     display: flex;
     flex-direction: column;
-    margin: 0 1% 0 0;
+    justify-content: space-between;
 }
 .iten {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 .itenn {
+    box-shadow: 0 0 10px 0 lightgray;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-h5 p span {
-    margin-left: 8%;
+    border-radius: 10%;
 }
 /* pied de la page */
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    background-color:whitesmoke;
-}
+    background-color: #f2f2f2;
+    display: flex;}
 .foot {
     display: flex;
     flex-direction: column;
@@ -285,27 +282,4 @@ footer {
     text-decoration: none;
     color: black;
 }
-/* pour les tablettes */
-@import url("testimport.css") screen and (max-width: 1500px);
-@media screen and (max-width: 600px){
-    .contenu {
-        display: flex;
-        flex-direction: column-reverse;
-   }
-    .populaire {
-        display: flex;
-        width: 90%;
-    }
-    .dilem {
-        width: 90%;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    p {
-        color: blue;
-    }
-}
-/* pour les telephones */
+
