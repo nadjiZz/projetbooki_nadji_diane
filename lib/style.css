@@ -125,8 +125,6 @@ nav a:hover {
 }
 /* le corp de la page */
 #contenu {
-    gap: 1rem;
-    margin: 1% 2% 3% 2%;
     display: flex;
     margin-bottom: 2rem;
 }
@@ -150,6 +148,7 @@ nav a:hover {
 }
 /* hebergement_marseille */
 #hebergement_marseille {
+    width: 90%;
     border-radius: 5%;
     flex-basis: 65%;
     margin-right: 0.5rem;
@@ -163,38 +162,37 @@ text-decoration: none;
 color: black;
 }
 .ligne {
-    padding: 1rem;
     display: flex;
-    justify-content: space-around;
+    flex-basis: 65%;
     }
 .item {
     background-color: white;
     display: flex;
     flex-direction: column;
     border-radius: 10%;
-    padding: 0.5rem;
+    padding: 1em;
     margin: 0.5em;
+    font-size: small;
 }
-.itemtext {
+.itmtext {
     display: flex;
     flex-direction: column;
-}
-.ietmtext {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+    padding: 1em;
     float: left;
 }
 .stars {
     float: left;
     color: blue;
-    margin-left: 0.5rem;
+    margin-left: 0.5em;
 }
 .opacité{
     opacity: 0.5;
 }
 .stars {
     color: blue;
+}
+.stars .fa {
+    color: gray;
 }
 .value {
     font-weight: bold;
@@ -214,12 +212,11 @@ p {
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
     height: 7em;
-    width: 10em;
+    width: 100%;
     justify-content: space-between;   
 }
 img{
-    width: 100%;
-    transition: 20ms; 
+    width: 100%; 
     cursor: pointer;
     object-fit: cover;   
 }
@@ -230,28 +227,21 @@ img:hover {
     border-bottom-left-radius: 10%;
     border-top-left-radius: 10%;
     height: 10em;
-    width: 90%;
+    width: 50%;
     justify-content: space-between; 
 }
 .imgee {
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
     height: 20em;
-    width: 15em;
-    justify-content: space-between;
-}
-.imge {
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
-    height: 30em;
-    width: 10em;
+    width: 14em;
     justify-content: space-between;
 }
 .imagee {
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
     height: 8em;
-    width: 15em;
+    width: 14em;
     justify-content: space-between;
 }
 #populaire {
@@ -282,25 +272,27 @@ img:hover {
     margin: 1% 2% 3% 2%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 #dilem {
-   
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .unique {
     border-radius: 10%;
     box-shadow: 0 0 10px 0 lightgray;
+    margin-bottom: 2em;
 }
 .double {
     display: flex;
     flex-direction: column;
-    margin: 1rem 0 1rem 0;
+    margin: 0 1em 0 1em ;
 }
 .iten {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
 }
 .itenn {
     box-shadow: 0 0 10px 0 lightgray;
@@ -308,8 +300,14 @@ img:hover {
     flex-direction: column;
     align-items: flex-start;
     border-radius: 10%;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1em;
     justify-content: space-around;
+}
+.trio1 {
+    display: flex;
+}
+.trio2 {
+    display: flex;
 }
 /* pied de la page */
 footer {
@@ -337,17 +335,26 @@ footer {
     }
     .ligne {
     flex-direction: column;
-    }
-    .imag {
-width: 100%;
+    width: 100%;
     }
     .colone {
         display: flex;
         justify-content: space-around;
     }
-#dilem {
+    #dilem {
     flex-wrap: wrap;
+    justify-content: center;
     }
+    .double, .unique {
+    margin: 0 1em 3em 1em;
+    }
+    img {
+        width: 100%;
+    }
+    .trio2 {
+        flex-direction: row-reverse;
+    }
+
 footer {
     flex-direction: column;
     align-items: center;
@@ -364,7 +371,6 @@ footer {
     .filtrelis {
         display: flex;
         flex-direction: column;
-
     }
     .filtre {
         flex-direction: column;
@@ -384,29 +390,25 @@ footer {
         margin-bottom: 0.5rem;
         width: 100%;
     }
-    .image, .imag{
+    .image, .imgee, .imagee {
         width: 100%;
         border-radius: 10% 10% 0 0;
     }
-    img {
-         width: 100%;
-    }
-    .ligne {
-        flex-direction: column;
-
-        }
     #hebergement_marseille {
         flex-direction: column;
         width: 100%;
         justify-content: space-around;
     }
-    .colone {
+    .ligne, .colone, .trio1, .trio2 {
         flex-direction: column;
     }
     #dilem {
-        flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
+        flex-direction: column;
     }
+    .double, .unique {
+        margin: 1em 0 1em 0;
+        }
     footer {
         flex-direction: column;
         align-items: center;
