@@ -71,7 +71,6 @@ nav a:hover {
 .titrefiltre {
     font-weight: bold;
     padding: 2rem 0.5rem 0rem 0.5rem;
-    text-align: center;
 }
 .filtrelist {
     display: flex;
@@ -173,6 +172,7 @@ color: black;
     padding: 1em;
     margin: 0.5em;
     font-size: small;
+    width: 100%;
 }
 .itmtext {
     display: flex;
@@ -211,7 +211,7 @@ p {
 .imag {
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
-    height: 7em;
+    height: 8em;
     width: 100%;
     justify-content: space-between;   
 }
@@ -233,15 +233,15 @@ img:hover {
 .imgee {
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
-    height: 20em;
-    width: 14em;
+    height: 25em;
+    width: 100%;
     justify-content: space-between;
 }
 .imagee {
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
-    height: 8em;
-    width: 14em;
+    height: 10em;
+    width: 100%;
     justify-content: space-between;
 }
 #populaire {
@@ -250,6 +250,7 @@ img:hover {
     border-radius: 3%;
     flex-basis: 33%;
     max-width: 100%;
+    margin-bottom: 1rem;
     padding: 1rem;
     justify-content: space-around;
 }
@@ -282,16 +283,20 @@ img:hover {
     border-radius: 10%;
     box-shadow: 0 0 10px 0 lightgray;
     margin-bottom: 2em;
+    justify-content: space-around;
+    width: 45%;
 }
 .double {
     display: flex;
     flex-direction: column;
     margin: 0 1em 0 1em ;
+    width: 45%;
 }
 .iten {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+   
 
 }
 .itenn {
@@ -330,6 +335,13 @@ footer {
     #contenu {
     flex-direction: column-reverse;
     }
+    .filtre {
+        display: flex;
+        flex-direction: column;
+    }
+    #hebergement_marseille {
+        width: 100%;
+    }
     #populaire {
         width: 100%;
     }
@@ -350,6 +362,10 @@ footer {
     }
     img {
         width: 100%;
+        height: 10em;
+    }
+    .image, .imgee, .imagee {
+        width: 100%;
     }
     .trio2 {
         flex-direction: row-reverse;
@@ -368,6 +384,7 @@ footer {
         float: left;
         align-items: center;   
     }
+   
     .filtrelis {
         display: flex;
         flex-direction: column;
@@ -408,6 +425,7 @@ footer {
     }
     .double, .unique {
         margin: 1em 0 1em 0;
+        width: 90%;
         }
     footer {
         flex-direction: column;
