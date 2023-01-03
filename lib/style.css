@@ -217,11 +217,10 @@ p {
 }
 img{
     width: 100%; 
-    cursor: pointer;
     object-fit: cover;   
 }
 img:hover {
-    transform: scale(1.1);
+    cursor: pointer;
 }
 .image{
     border-bottom-left-radius: 10%;
