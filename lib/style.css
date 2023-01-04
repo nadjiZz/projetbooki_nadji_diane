@@ -70,11 +70,11 @@ nav a:hover {
 }
 .titrefiltre {
     font-weight: bold;
-    padding: 2rem 0.5rem 0rem 0.5rem;
+    padding: 2rem 0.5rem 0rem 0rem;
 }
 .filtrelist {
     display: flex;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 0;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -122,7 +122,6 @@ nav a:hover {
 .fa-solid fa-circle-info {
     padding: 1%;
 }
-/* le corp de la page */
 #contenu {
     display: flex;
     margin-bottom: 2rem;
@@ -140,11 +139,9 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     padding: 1em;
+    color: blue;
 }
-
-.info fa-solid fa-circle-info {
-    text-decoration: none;
-}
+/* le corp de la page */
 /* hebergement_marseille */
 #hebergement_marseille {
     width: 90%;
@@ -257,7 +254,7 @@ img:hover {
     background-color: white;
     display: flex; 
     border-radius: 10%;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     margin: 0em 0rem 1em 0em;
     font-size: small;
 }
@@ -330,13 +327,26 @@ footer {
     text-decoration: none;
     color: black;
 }
+/* media query version tablette */
 @media (max-width: 768px) {
+    
     #contenu {
     flex-direction: column-reverse;
+    }
+    .recherche input {
+        max-width: 50%;
+        padding: 0.5rem;
+    }
+    .recherche button {
+        max-width: 30%;
+        padding: 0.5rem;
     }
     .filtre {
         display: flex;
         flex-direction: column;
+    }
+    .filtreliust {
+        padding: 1rem 1rem 1rem 0;
     }
     #hebergement_marseille {
         width: 100%;
@@ -347,6 +357,7 @@ footer {
     .ligne {
     flex-direction: column;
     width: 100%;
+    margin: 0.5rem;
     }
     .colone {
         display: flex;
@@ -369,13 +380,8 @@ footer {
     .trio2 {
         flex-direction: row-reverse;
     }
-
-footer {
-    flex-direction: column;
-    align-items: center;
-    }
 }
-
+/* media query version telephone */
 @media (max-width: 425px) {
     nav {
         display: flex;
@@ -383,13 +389,16 @@ footer {
         float: left;
         align-items: center;   
     }
-   
-    .filtrelis {
-        display: flex;
+    .Imgbooki {
+        width: 100%;
+    }
+    .filtrelist {
         flex-direction: column;
+        align-items: flex-start;
     }
     .filtre {
         flex-direction: column;
+        margin: 0%;
     }
     #contenu {
         flex-direction: column-reverse;
@@ -429,5 +438,9 @@ footer {
     footer {
         flex-direction: column;
         align-items: center;
+        }
+        .foot {
+            width: 100%;
+            align-items: center;
         }
 }
