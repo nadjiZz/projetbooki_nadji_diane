@@ -1,0 +1,475 @@
+* {
+  font-family: "times new roman", "Raleway", "Sans serif";
+  box-sizing: border-box;
+}
+/* css de l'entete de la page */
+header {
+  margin: 1% 2% 3% 2%;
+  display: flex;
+  flex-direction: column;
+}
+nav #navigation {
+  display: flex;
+  flex-shrink: initial;
+  align-items: center;
+  justify-content: stretch;
+}
+nav a {
+  float: right;
+  padding: 2rem;
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  text-decoration: overline;
+  color: #0065fc;
+}
+.Imgbooki {
+  width: 30%;
+}
+.orientation {
+  padding: 1rem 0 1rem 0;
+}
+.recherche {
+  justify-content: stretch;
+  border-radius: 1rem;
+  display: flex;
+  float: left;
+}
+.recherche i {
+  background-color: rgb(201, 196, 196);
+  color: black;
+  border-radius: 1rem 0 0 1rem;
+}
+.recherche input {
+  padding: 1rem;
+  color: black;
+}
+.recherche button {
+  background-color: #0065fc;
+  border-radius: 0 1rem 1rem 0;
+  border: none;
+  color: white;
+  font-weight: bold;
+  width: 7rem;
+  cursor: pointer;
+  transition: transform 200ms;
+}
+.recherche button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  background-color: #f2f2f2;
+}
+/* Filtre */
+.filtre {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  margin: 1rem 0 0.5rem 0;
+}
+.titrefiltre {
+  font-weight: bold;
+  padding: 2rem 0.5rem 0rem 0rem;
+}
+.filtrelist {
+  display: flex;
+  padding: 1rem 1rem 1rem 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.listfiltre .fa-solid {
+  color: blue;
+  background-color: #deebff;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.listfiltre a {
+  text-decoration: none;
+  color: black;
+  padding: 0 0.2rem 0 0.3rem;
+}
+.fa-sharp {
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.listfiltre {
+  border: 1px solid lightgrey;
+  display: flex;
+  height: 3rem;
+  border-radius: 2rem;
+  align-items: center;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.listfiltre p {
+  margin-left: 0;
+  padding: 0 0.5rem 0 0.5rem;
+}
+.listfiltre:hover {
+  background-color: #f3f8ff;
+  transform: scale(1.02);
+}
+.fa-solid fa-circle-info {
+  padding: 1%;
+}
+#contenu {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+.info p {
+  margin: 10px;
+}
+.info .fas {
+  border: 2px solid rgb(238, 236, 236);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  color: blue;
+}
+/* le corp de la page */
+/* hebergement_marseille */
+#hebergement_marseille {
+  width: 90%;
+  border-radius: 5%;
+  flex-basis: 65%;
+  margin-right: 0.5rem;
+  padding: 0 1rem;
+  background-color: whitesmoke;
+  max-width: 100%;
+  justify-content: space-around;
+}
+#hebergement_marseille a {
+  text-decoration: none;
+  color: black;
+}
+.ligne {
+  display: flex;
+  flex-basis: 65%;
+}
+.item {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10%;
+  padding: 1em;
+  margin: 0.5em;
+  font-size: small;
+  width: 100%;
+}
+.itmtext {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  float: left;
+}
+.stars {
+  float: left;
+  color: blue;
+  margin-left: 0.5em;
+}
+.opacité {
+  opacity: 0.5;
+}
+.stars {
+  color: blue;
+}
+.stars .fa {
+  color: gray;
+}
+.value {
+  font-weight: bold;
+}
+.espacement .fas {
+  float: right;
+}
+h5 {
+  text-align: start;
+  margin: 0.4rem;
+}
+p {
+  float: left;
+  margin: 0.4rem;
+}
+.imag {
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  height: 8em;
+  width: 100%;
+  justify-content: space-between;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+img:hover {
+  cursor: pointer;
+}
+.image {
+  border-bottom-left-radius: 10%;
+  border-top-left-radius: 10%;
+  height: 10em;
+  width: 50%;
+  justify-content: space-between;
+}
+.imgee {
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  height: 25em;
+  width: 100%;
+  justify-content: space-between;
+}
+.imagee {
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  height: 10em;
+  width: 100%;
+  justify-content: space-between;
+}
+#populaire {
+  width: 90%;
+  background-color: whitesmoke;
+  border-radius: 3%;
+  flex-basis: 33%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  justify-content: space-around;
+}
+.items {
+  background-color: white;
+  display: flex;
+  border-radius: 10%;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0em 0rem 1em 0em;
+  font-size: small;
+}
+.block {
+  box-sizing: border-box;
+  padding: 0 0 0.5% 0;
+}
+.ecart {
+  float: right;
+}
+#activité_marseille {
+    margin: 0%;
+    max-width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#dilem {
+  display: flex;
+  justify-content: space-around;
+}
+.unique {
+  border-radius: 10%;
+  box-shadow: 0 0 10px 0 lightgray;
+  margin-bottom: 2em;
+  justify-content: space-around;
+  width: 45%;
+}
+.double {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em 0 1em;
+  width: 45%;
+}
+.iten {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.itenn {
+  box-shadow: 0 0 10px 0 lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10%;
+  margin-bottom: 1em;
+  justify-content: space-around;
+}
+.trio1 {
+  display: flex;
+}
+.trio2 {
+  display: flex;
+}
+/* pied de la page */
+footer {
+  background-color: #f2f2f2;
+  display: flex;
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: flex-start;
+  padding: 0 2% 0 2%;
+}
+.foot_element {
+  text-decoration: none;
+  color: black;
+}
+/* media query version tablette */
+@media (max-width: 768px) {
+  #contenu {
+    flex-direction: column-reverse;
+  }
+  #activité_marseille{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+  
+  }
+  .recherche input {
+    max-width: 50%;
+    padding: 0.5rem;
+  }
+  .recherche button {
+    max-width: 30%;
+    padding: 0.5rem;
+  }
+  .filtre {
+    display: flex;
+    flex-direction: column;
+  }
+  .filtreliust {
+    padding: 1rem 1rem 1rem 0;
+  }
+  #hebergement_marseille {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+  }
+  #populaire {
+    width: 100%;
+  }
+  .ligne {
+    flex-direction: column;
+    width: 100%;
+    margin: 0.5rem;
+  }
+  .colone {
+    display: flex;
+    justify-content: space-around;
+    gap: .5rem;
+    padding: .5rem;
+  }
+  #dilem {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .double,
+  .unique {
+    margin: 0 1em 3em 1em;
+  }
+  img {
+    width: 100%;
+    height: 10em;
+  }
+  .image,
+  .imgee,
+  .imagee {
+    width: 100%;
+  }
+  .trio2 {
+    flex-direction: row-reverse;
+  }
+}
+/* media query version telephone */
+@media (max-width: 425px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    align-items: center;
+  }
+  .Imgbooki {
+    width: 100%;
+  }
+  .filtrelist {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filtre {
+    flex-direction: column;
+    margin: 0%;
+  }
+  #contenu {
+    flex-direction: column-reverse;
+  }
+  .item {
+    margin-bottom: 1rem;
+  }
+  #populaire {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .items {
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  .image,
+  .imgee,
+  .imagee {
+    width: 100%;
+    border-radius: 10% 10% 0 0;
+  }
+  #hebergement_marseille {
+    margin: 0%;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ligne,
+  .colone,
+  .trio1,
+  .trio2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #activité_marseille {
+    
+    max-width: 100%;
+    margin: 0%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+  #dilem {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .double,
+  .unique {
+    margin: 1em 0 1em 0;
+    width: 90%;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .foot {
+    width: 100%;
+    align-items: center;
+  }
+}
