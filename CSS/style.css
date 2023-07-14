@@ -60,7 +60,7 @@ nav a:hover {
   transform: scale(1.1);
   background-color: #f2f2f2;
 }
-/* Filtre */
+/* Css de la partie filtre */
 .filtre {
   display: flex;
   justify-content: flex-start;
@@ -140,8 +140,8 @@ nav a:hover {
   padding: 1em;
   color: blue;
 }
-/* le corp de la page */
-/* hebergement_marseille */
+/* LE CORPS DU PROJET */
+/* La partie hebergement_marseille */
 #hebergement_marseille {
   width: 90%;
   border-radius: 5%;
@@ -264,6 +264,7 @@ img:hover {
 .ecart {
   float: right;
 }
+/* La partie activité_marseille */
 #activité_marseille {
     margin: 0%;
     max-width: 100%;
@@ -325,7 +326,8 @@ footer {
   text-decoration: none;
   color: black;
 }
-/* media query version tablette */
+/* LA RESPONSIVITE DES ECRANS */
+/*media query version tablette */
 @media (max-width: 768px) {
   #contenu {
     flex-direction: column-reverse;
